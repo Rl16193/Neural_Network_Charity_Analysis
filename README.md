@@ -10,10 +10,28 @@ From Alphabet Soup’s business team received a CSV containing more than 34,000 
 
 ### Data Processing
 
-**1. Target - was the money used effectively(IS_SUCESSFUL)**
+1. **Target** - was the money used effectively(IS_SUCESSFUL)
 
-**2. Features -Application Type, Affiliated sector of industry, Government Organization Classification, Use case for funding, Organization type, Active status, Income classification, Special consideration for application, Funding amount requested**
+2. **Features** -Application Type, Affiliated sector of industry, Government Organization Classification, Use case for funding, Organization type, Active status, Income classification, Special consideration for application, Funding amount requested
 
-** Removable variable - Identification columns**
+3. **Removable variable** - Identification columns (EIN and Name)
 
-333 
+### Compiling, Training and Evaluated Model
+
+1. **Number of Nuerons** - The input data has 43 features which is why our initial set of nuerons are 80, 2nd layer has 30 neurons. Total samples are 25724.
+
+2. **Model** - We use ReLU activation function for the input and hidden layers and the Sigmoid activation function for the output layer. For compilation, optimizer - Adam and Loss Function - binary_crossentropy.
+
+3. **Performance** - The accuracy achieved in the initial test is 72.79% which is lower than the requirement (75%)
+
+4. **Steps to improve performance** - 
+    a. Add a hidden neuron layer. 3rd layer will have 7 neurons. Also increased the first layer neurons to 100 and second layer nuerons to 45.
+    b. Change activation function for the first and hidden layer to tanh.
+    c. Increase the number of epochs to 200.
+    
+## Summary
+    
+The deep learning model is unable to reach the target accuracy of 75%.
+In this case we might have better luck implementing a SVM or random forrest classification model.
+    
+    
