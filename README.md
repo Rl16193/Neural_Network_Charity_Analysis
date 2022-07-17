@@ -22,10 +22,12 @@ From Alphabet Soup’s business team received a CSV containing more than 34,000 
 
 2. **Model** - We use ReLU activation function for the input and hidden layers and the Sigmoid activation function for the output layer. For compilation, optimizer - Adam and Loss Function - binary_crossentropy.
 
-3. **Performance** - The accuracy achieved in the initial test is 72.79% which is lower than the requirement (75%)
+3. **Checkpoints** - The model weights are saved for every 5 epoch.
 
-4. **Steps to improve performance** - 
-    a. Add a hidden neuron layer. 3rd layer will have 7 neurons. Also increased the first layer neurons to 100 and second layer nuerons to 45.
+4. **Performance** - The accuracy achieved in the initial test is 72.79% which is lower than the requirement (75%)\
+
+5. **Steps to improve performance** - 
+    a. Add a hidden neuron layer. 3rd layer will have 5 neurons.
     b. Change activation function for the first and hidden layer to tanh.
     c. Increase the number of epochs to 200.
     
@@ -33,5 +35,3 @@ From Alphabet Soup’s business team received a CSV containing more than 34,000 
     
 The deep learning model is unable to reach the target accuracy of 75%.
 In this case we might have better luck implementing a SVM or random forrest classification model.
-    
-    
